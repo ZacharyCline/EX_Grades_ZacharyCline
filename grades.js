@@ -14,22 +14,16 @@
 
 
 //Student Scores
-var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
+var scoresArray2= [82, 78, 38, 23, 24];
+var scoresArray = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
 var a = 0
 var b = 0
 var c = 0
 var d = 0
 var f = 0
 
-var sortedScores = scores.sort();
-	console.log("The Grades Are:", sortedScores);
 
-var highestGrade = sortedScores[sortedScores.length - 1];
-	console.log("Highest Grade", highestGrade);
-
-var lowestGrade = sortedScores[sortedScores.length - sortedScores.length];
-	console.log("Lowest Grade", lowestGrade);
-
+function grades (scores) {
 	for (var i = 0; i < scores.length; i++) {
 		var score = scores[i]
 		if ( score > 90) {
@@ -45,8 +39,19 @@ var lowestGrade = sortedScores[sortedScores.length - sortedScores.length];
 			}
 
 		};
+var sortedScores = scores.sort();
+	console.log("The Grades Are:", sortedScores);
+
+var highestGrade = sortedScores[sortedScores.length - 1];
+	console.log("Highest Grade", highestGrade);
+
+var lowestGrade = sortedScores[sortedScores.length - sortedScores.length];
+	console.log("Lowest Grade", lowestGrade);
 console.log("A's", a);
 console.log("B's", b);
 console.log("C's", c);
 console.log("D's", d);
 console.log("F's", f);
+}
+grades(scoresArray);
+grades(scoresArray2);
